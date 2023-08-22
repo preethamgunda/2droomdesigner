@@ -1,0 +1,61 @@
+.main{
+  padding: auto;
+  height: 700px;
+}
+.left_screen {
+  width: 25%;
+  float: left;
+}
+.right_screen {
+  width: 65%;
+  float: right;
+  /* background-color: brown; */
+  margin-right: 100px;
+  margin-top: 50px;
+}
+.left_screen_1 {
+  width: 20%;
+  float: left;
+  height: 700px;
+  background-color: rgba(41, 47, 45, 0.348);
+}
+.left_screen_2 {
+  width: 80%;
+  float: right;
+  height: 700px;
+  background-color: rgba(163, 163, 176, 0.27);
+}
+.second-header {
+  margin: auto;
+  background-color: rgba(163, 163, 176, 0.27);
+
+  height: auto;
+  float: right;
+  width: 75%;
+}
+.theme1 {
+  margin-left: 30px;
+  width: 40%;
+  float: left;
+}
+.theme2 {
+  margin-right: 30px;
+  width: 40%;
+  float: right;
+}
+.theme3 {
+  margin-top: 20px;
+  width: 60%;
+  float: left;
+}
+.theme4 {
+  margin-top: -90px;
+  margin-left: 30px;
+  width: 50%;
+  float: right;
+}
+.horizontal-measure {
+  border: 2px solid;
+  margin: auto;
+  margin-bottom: 10px;
+}
