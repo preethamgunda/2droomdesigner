@@ -1,3 +1,10 @@
+
+![page5](https://github.com/preethamgunda/2droomdesigner/assets/69001955/57cb894e-c8c3-4240-a59b-1cfc7d05b078)
+![page4](https://github.com/preethamgunda/2droomdesigner/assets/69001955/fcd8cea6-bb87-4f58-94ed-14da09523f7f)
+![page3](https://github.com/preethamgunda/2droomdesigner/assets/69001955/3fcd4b96-4f57-486c-85e4-c6b4165deaea)
+![page2](https://github.com/preethamgunda/2droomdesigner/assets/69001955/55704540-274d-4407-8c39-7de1c934eec5)
+![page1](https://github.com/preethamgunda/2droomdesigner/assets/69001955/33f942c4-1cd6-4065-8558-95ca65971f9f)
+![home](https://github.com/preethamgunda/2droomdesigner/assets/69001955/44f0876b-b6c1-477b-8d65-74fca958aaa3)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,10 +75,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-![page5](https://github.com/preethamgunda/2droomdesigner/assets/69001955/57cb894e-c8c3-4240-a59b-1cfc7d05b078)
-![page4](https://github.com/preethamgunda/2droomdesigner/assets/69001955/fcd8cea6-bb87-4f58-94ed-14da09523f7f)
-![page3](https://github.com/preethamgunda/2droomdesigner/assets/69001955/3fcd4b96-4f57-486c-85e4-c6b4165deaea)
-![page2](https://github.com/preethamgunda/2droomdesigner/assets/69001955/55704540-274d-4407-8c39-7de1c934eec5)
-![page1](https://github.com/preethamgunda/2droomdesigner/assets/69001955/33f942c4-1cd6-4065-8558-95ca65971f9f)
-![home](https://github.com/preethamgunda/2droomdesigner/assets/69001955/44f0876b-b6c1-477b-8d65-74fca958aaa3)
 
