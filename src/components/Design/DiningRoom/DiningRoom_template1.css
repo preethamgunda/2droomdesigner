@@ -1,4 +1,4 @@
-.main{
+.main {
   padding: auto;
   height: 700px;
 }
@@ -58,4 +58,9 @@
   border: 2px solid;
   margin: auto;
   margin-bottom: 10px;
+}
+.draggo {
+  text-align: start;
+  position: absolute;
+  top: 0;
 }

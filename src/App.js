@@ -19,6 +19,9 @@ import Themes from "./components/Design/Furniture/Themes";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import Testt from "./components/Testt";
+import { Download } from "@mui/icons-material";
+import Compodown from "./components/Compodown";
+import BedRoom_template_1 from "./components/Design/BedRoom/BedRoom_template_1";
 // const darkTheme = createTheme({
 //   palette: {
 //     mode: "dark",
@@ -51,9 +54,14 @@ function App() {
             <Route path="/profile_user_design2" element={<Design2 />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/test" element={<Testt />} />
+            <Route path="/download" element={<Compodown />} />
             <Route
               path="/2d-room-design-dining-room-template-0001"
               element={<DiningRoom_template1 />}
+            />
+            <Route
+              path="/2d-room-design-bed-room-template-0001"
+              element={<BedRoom_template_1 />}
             />
             <Route path="/floor-themes" element={<Themes />} />
           </Routes>

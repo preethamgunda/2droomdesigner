@@ -40,7 +40,9 @@ const Room = () => {
   const navigate = useNavigate();
 
   const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
+    if (button === true) {
+      setActiveStep((prevActiveStep) => prevActiveStep + 1);
+    }
   };
 
   const handleBack = () => {
@@ -52,6 +54,7 @@ const Room = () => {
   const [button3, setButton3] = React.useState(false);
   const [button4, setButton4] = React.useState(false);
   const [button5, setButton5] = React.useState(false);
+  const [brstbtn, setBdstbtn] = useState(false);
 
   const loadRectangle = () => {
     if (button === false) {
@@ -69,6 +72,7 @@ const Room = () => {
   };
   const handleImageClickBr = () => {
     setLoadImg("BedRoom");
+    setBdstbtn(true);
   };
   const [val, setVal] = React.useState(300);
   const [width, setWidth] = useState(600);
@@ -82,7 +86,7 @@ const Room = () => {
   };
 
   const handleminus = () => {
-    setVal(val - 50);
+    val > 300 && setVal(val - 50);
   };
 
   const handlepluswidth = () => {
@@ -291,18 +295,6 @@ const Room = () => {
             </div>
           )}
 
-          {activeStep == 1 && (
-            <div>
-              <Button
-                variant="outlined"
-                className="rotate_button"
-                onClick={rotatenindeg}
-                startIcon={<RotateRightIcon />}
-              >
-                Rotate
-              </Button>
-            </div>
-          )}
           {activeStep === 2 && (
             <div>
               <h3>Room Dimensions</h3>
@@ -391,6 +383,21 @@ const Room = () => {
                   />
                 </div>
               )}
+              {
+                <div>
+                  {displayStartButton === true && (
+                    <button
+                      className="button"
+                      style={{ marginTop: "10px" }}
+                      onClick={() => {
+                        navigate("/2d-room-design-dining-room-template-0001");
+                      }}
+                    >
+                      Start
+                    </button>
+                  )}
+                </div>
+              }
               {rooom === "LivingRoom" && (
                 <div className="image-clickLr">
                   <img
@@ -409,12 +416,28 @@ const Room = () => {
                   <img
                     src={BedRoom}
                     style={{
-                      width: "200px",
+                      width: "300px",
                       marginRight: "5px",
                       cursor: "pointer",
                     }}
                     onClick={handleImageClickBr}
                   />
+                  {brstbtn === true && (
+                    <button
+                      className="button"
+                      style={{ marginTop: "10px" }}
+                      onClick={() => {
+                        navigate("/2d-room-design-bed-room-template-0001");
+                      }}
+                    >
+                      Start
+                    </button>
+                  )}
+                </div>
+              )}
+              {rooom === "" && (
+                <div className="image-clickLr">
+                  <h1>No theme selected</h1>
                 </div>
               )}
               {/* <img
@@ -439,6 +462,7 @@ const Room = () => {
                 /> */}
             </div>
           )}
+
           <MobileStepper
             className="mobilestepper"
             variant="progress"
@@ -491,18 +515,6 @@ const Room = () => {
             </DesignLengthContext.Provider>
           )}
           {button1 === true && <div className="outline-l"></div>}
-          <div>
-            {displayStartButton === true && (
-              <button
-                style={{ marginTop: "50px" }}
-                onClick={() => {
-                  navigate("/2d-room-design-dining-room-template-0001");
-                }}
-              >
-                Start
-              </button>
-            )}
-          </div>
         </div>
       </div>
     </>

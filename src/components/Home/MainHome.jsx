@@ -123,11 +123,15 @@ const MainHome = () => {
           >
             Design the desired room of your choice.
           </p>
+
           <div className="image-grid">
             <div className="img1">
               <img
                 src={DiningRoomM}
-                style={{ width: "550px", height: "400px" }}
+                style={{ width: "550px", height: "400px", cursor: "pointer" }}
+                // onClick={() => {
+                //   navigate("/room_designer");
+                // }}
               />
               <h3>Dining Room</h3>
             </div>
@@ -143,11 +147,26 @@ const MainHome = () => {
               <h3>Living Room</h3>
             </div>
             <div className="img4">
+              <img
+                src={LivingRoomM}
+                style={{ height: "400px", width: "550px" }}
+              />
               <h3>Many more....</h3>
             </div>
           </div>
         </div>
       </div>
+
+      <h1>Simple Steps need to be followed:</h1>
+      <li style={{ textAlign: "start", marginLeft: "100px", fontSize: "30px" }}>
+        Select the required room.
+        <li>Select the required shape.</li>
+        <li>Select the required dimensions.</li>
+        <li>
+          Start designing based on the requirements and different options.
+        </li>
+        <li>Make sure you download the design to avoid loss of data.</li>
+      </li>
     </>
   );
 };
